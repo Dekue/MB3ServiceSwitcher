@@ -1,0 +1,33 @@
+﻿<Window x:Class="MB3ServiceSwitcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MB3ServiceSwitcher"
+        mc:Ignorable="d"
+        Title="MB3ServiceSwitcher" Height="346" Width="532"
+        ContentRendered="OnContentRendered"
+        Closing="OnClosing" Icon="favicon.ico" ResizeMode="CanMinimize" Background="White">
+    <Grid>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="79" Margin="10,56,0,0" Stroke="Black" VerticalAlignment="Top" Width="495"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="41" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="495"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="79" Margin="10,140,0,0" Stroke="Black" VerticalAlignment="Top" Width="495"/>
+        <Label x:Name="mb3ServiceRunning" Content="MB3Service status:" HorizontalAlignment="Left" Margin="14,18,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="mb3ServiceStatus" Content="active" HorizontalAlignment="Left" Margin="123,18,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="buttonStop" Content="Stop" HorizontalAlignment="Left" Margin="341,18,0,0" VerticalAlignment="Top" Width="75" Height="26" Click="buttonStop_Click"/>
+        <Button x:Name="buttonStart" Content="Start" HorizontalAlignment="Left" Margin="421,18,0,0" VerticalAlignment="Top" Width="75" Height="26" Click="buttonStart_Click"/>
+        <TextBox x:Name="textBoxAntiRansom" HorizontalAlignment="Left" Height="26" Margin="18,101,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="448"/>
+        <TextBox x:Name="textBoxDishonored" HorizontalAlignment="Left" Height="26" Margin="18,186,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="448"/>
+        <Button x:Name="buttonAntiRansom" Content="..." HorizontalAlignment="Left" Margin="471,101,0,0" VerticalAlignment="Top" Width="25" RenderTransformOrigin="1.613,-0.65" Height="26" Click="buttonAntiRansom_Click"/>
+        <Button x:Name="buttonDishonored" Content="..." HorizontalAlignment="Left" Margin="471,186,0,0" VerticalAlignment="Top" Width="25" RenderTransformOrigin="1.613,-0.65" Height="26" Click="buttonDishonored_Click"/>
+        <Label x:Name="labelAntiRansomPath" Content="Path to Malwarebytes Anti-Ransomware" HorizontalAlignment="Left" Margin="14,60,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelDishonoredPath" Content="Path to blocked program" HorizontalAlignment="Left" Margin="14,145,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelAntiRansomPath2" Content="e.g. C:\Program Files\Malwarebytes\Anti-Ransomware\mbarw.exe" HorizontalAlignment="Left" Margin="14,75,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelDishonoredPath2" Content="e.g. C:\Program Files\Steam\SteamApps\common\Dishonored2\Dishonored2.exe" HorizontalAlignment="Left" Margin="14,160,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonSave" Content="Save paths" HorizontalAlignment="Left" Margin="407,224,0,0" VerticalAlignment="Top" Width="89" Height="26" Click="buttonSave_Click"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="41" Margin="10,255,0,0" Stroke="Black" VerticalAlignment="Top" Width="495"/>
+        <Button x:Name="buttonAutoStartGame" Content="Start Program" HorizontalAlignment="Left" Margin="407,263,0,0" VerticalAlignment="Top" Width="89" Height="26" Click="buttonAutoStartGame_Click"/>
+        <Label x:Name="labelExpl1" Content="This will stop the MB3Service, start the program and restart the service" HorizontalAlignment="Left" Margin="14,255,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelExpl2" Content="and Anti-Ransomware if the program was terminated." HorizontalAlignment="Left" Margin="14,270,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
