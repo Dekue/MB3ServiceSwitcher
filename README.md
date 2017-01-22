@@ -7,3 +7,5 @@ rewrite save files. Instead new files will get created, which are read-only agai
 Generally this program stops the service (and thus the ransomware protection by closing the
 program) and starts a user defined program. This doesn't have to be Dishonored2.exe, it can
 be any program. If the program is terminated the ransomware protection gets restarted.
+
+This program runs under Windows and needs admin rights to start/stop processes and services.
