@@ -9,3 +9,4 @@ program) and starts a user defined program. This doesn't have to be Dishonored2.
 be any program. If the program is terminated the ransomware protection gets restarted.
 
 This program runs under Windows and needs admin rights to start/stop processes and services.
+No installation needed.
